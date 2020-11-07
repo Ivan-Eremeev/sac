@@ -1,0 +1,95 @@
+// settings
+html {
+	&.lock {
+		overflow: hidden;
+	}
+}
+a {
+	transition: .1s;
+	text-decoration: none;
+}
+button {
+	font-family: "Roboto";
+	outline: none;
+}
+input {
+	font-family: "Roboto";
+	outline: none;
+}
+.row {
+	@include row-flex();
+}
+.wrapper {
+	@include wrapper();
+}
+body {
+	background-color: #fff;
+	font-family: "Roboto";
+	font-size: 41px;
+}
+.mobile-hide {
+	@media (max-width: $break_sm) {
+		display: none !important;
+	}
+}
+.mobile-visible {
+	@media (min-width: $break_sm + 1) {
+		display: none !important;
+	}
+}
+.img-responsive {
+	position: relative;
+	overflow: hidden;
+	img {
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	&:after {
+		content: '';
+		display: block;
+		padding-top: 56.25%;
+	}
+}
+// /settings
+
+.wrapper {
+	@include wrapper();
+}
+.row {
+	@include row-flex();
+}
+
+.page {
+	max-width: 1920px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.header {
+	padding: 20px 0 0;
+	@media (max-width: $break_xl) {
+		padding: 20px 0 20px;
+	}
+	@media (max-width: $break_sm) {
+		margin-bottom: 0;
+	}
+}
+.logo {
+	display: inline-block;
+	@media (max-width: $break_xl) {
+		max-width: 132px;
+	}
+}
+.bg {
+	padding-bottom: 22px;
+	background-image: url(../img/bg.jpg);
+	background-color: #112a55;
+	background-size: cover;
+	>.wrapper {
+		background-image: url(../img/image.png);
+		background-repeat: no-repeat;
+		background-position: right top;
+	}
+}

@@ -1,0 +1,13 @@
+.partners {
+  padding: 14px 0;
+  background-color: #000000;
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &_icon {
+    padding: 0 10px;
+  }
+}
