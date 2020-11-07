@@ -267,7 +267,7 @@ body {
 }
 @media (max-width: 769px) {
 	.header {
-		margin-bottom: 0;
+		padding: 10px 0;
 	}
 }
 
@@ -279,22 +279,38 @@ body {
 	-webkit-box-flex: 1;
 	    -ms-flex-positive: 1;
 	        flex-grow: 1;
-	padding-bottom: 15px;
 	background-image: url(../img/bg.jpg);
 	background-color: #112a55;
 	background-size: cover;
 }
 .bg > .wrapper {
+	height: 100%;
+	padding-bottom: 15px;
 	background-image: url(../img/image-1920.png);
 	background-repeat: no-repeat;
 	background-position: right top;
 }
 @media (max-width: 1400px) {
 	.bg > .wrapper {
-		background-image: url(../img/image.png);
+		background-position: right -100px top;
+		background-size: 90% auto;
 	}
 }
-
+@media (max-width: 1050px) {
+	.bg > .wrapper {
+		background-position: right -100px center;
+	}
+}
+@media (max-width: 769px) {
+	.bg {
+		background-image: url(../img/bg-sm.jpg);
+	}
+	.bg > .wrapper {
+		background-image: url(../img/image-sm.png);
+		background-position: center top 412px;
+		background-size: 520px auto;
+	}
+}
 .welcome_row {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -393,10 +409,34 @@ body {
 		font-size: 46px;
 	}
 }
+@media (max-width: 769px) {
+	.welcome_row {
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
+	.welcome_content {
+		margin-bottom: 300px;
+	}
+	.welcome_title {
+		margin-bottom: 0;
+	}
+	.welcome_text {
+		font-size: 39px;
+	}
+	.welcome_text-plus {
+		font-size: 46px;
+	}
+	.welcome_btn {
+		display: block;
+	}
+}
 .steps {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	color: #fff;
 	font-family: "RobotoCondensed";
 }
@@ -448,7 +488,7 @@ body {
 }
 @media (max-width: 1400px) {
 	.steps_item {
-		padding: 13px 24px;
+		padding: 15px 24px;
 		background-image: url(../img/rectangle.png);
 		margin: 0 -5px;
 	}
@@ -479,6 +519,36 @@ body {
 		left: 50%;
 		-webkit-transform: translate(-50%, -50%);
 		        transform: translate(-50%, -50%);
+	}
+}
+@media (max-width: 769px) {
+	.steps {
+		max-width: 375px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.steps_col {
+		width: 100%;
+	}
+	.steps_item {
+		padding: 11px 24px;
+		background-image: url(../img/rectangle-sm.png);
+		margin: 1px -10px;
+	}
+	.steps_title {
+		font-size: 26px;
+	}
+	.steps_text {
+		font-size: 20px;
+	}
+	.steps_num {
+		width: 44px;
+		height: 44px;
+		font-size: 31px;
+	}
+	.steps_num:after {
+		width: 34px;
+		height: 34px;
 	}
 }
 

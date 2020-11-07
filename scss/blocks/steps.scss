@@ -1,5 +1,6 @@
 .steps {
   display: flex;
+  flex-wrap: wrap;
   color: #fff;
   font-family: "RobotoCondensed";
   &_col {
@@ -44,7 +45,7 @@
   }
   @media (max-width: $break_xl) {
     &_item {
-      padding: 13px 24px;
+      padding: 15px 24px;
       background-image: url(../img/rectangle.png);
       margin: 0 -5px;
     }
@@ -73,6 +74,34 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+      }
+    }
+  }
+  @media (max-width: $break_sm) {
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+    &_col {
+      width: 100%;
+    }
+    &_item {
+      padding: 11px 24px;
+      background-image: url(../img/rectangle-sm.png);
+      margin: 1px -10px;
+    }
+    &_title {
+      font-size: 26px;
+    }
+    &_text {
+      font-size: 20px;
+    }
+    &_num {
+      width: 44px;
+      height: 44px;
+      font-size: 31px;
+      &:after {
+        width: 34px;
+        height: 34px;
       }
     }
   }
