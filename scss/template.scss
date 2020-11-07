@@ -1,5 +1,6 @@
 // settings
 html {
+	height: 100%;
 	&.lock {
 		overflow: hidden;
 	}
@@ -23,6 +24,7 @@ input {
 	@include wrapper();
 }
 body {
+	height: 100%;
 	background-color: #fff;
 	font-family: "Roboto";
 	font-size: 41px;
@@ -62,9 +64,9 @@ body {
 }
 
 .page {
-	max-width: 1920px;
-	margin-left: auto;
-	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
 }
 
 .header {
@@ -78,18 +80,19 @@ body {
 }
 .logo {
 	display: inline-block;
-	@media (max-width: $break_xl) {
-		max-width: 132px;
-	}
 }
 .bg {
-	padding-bottom: 22px;
+	flex-grow: 1;
+	padding-bottom: 15px;
 	background-image: url(../img/bg.jpg);
 	background-color: #112a55;
 	background-size: cover;
 	>.wrapper {
-		background-image: url(../img/image.png);
+		background-image: url(../img/image-1920.png);
 		background-repeat: no-repeat;
 		background-position: right top;
+		@media (max-width: $break_xl) {
+			background-image: url(../img/image.png);
+		}
 	}
 }
