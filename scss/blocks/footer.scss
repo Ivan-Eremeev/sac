@@ -26,7 +26,8 @@
   &_link {
     color: #fff;
   }
-  @media (max-width: $break_sm) {
-    font-size: 14px;
+  @media (max-width: $break_md) {
+    padding: 10px 0;
+    font-size: 11px;
   }
 }

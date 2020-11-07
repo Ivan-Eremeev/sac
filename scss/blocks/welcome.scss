@@ -70,7 +70,10 @@
     }
     &_content {
       max-width: 340px;
-      margin-bottom: 60px;
+      margin-bottom: 30px;
+    }
+    &_title {
+      margin-bottom: 12px;
     }
     &_title-big {
       font-size: 110px;
@@ -87,13 +90,12 @@
     }
     &_text {
       font-size: 46px;
-      margin-bottom: 5px;
     }
     &_text-plus {
       font-size: 54px;
     }
     &_btn {
-      padding: 23px;
+      padding: 13px 23px;
       font-size: 46px;
     }
   }

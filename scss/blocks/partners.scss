@@ -1,5 +1,5 @@
 .partners {
-  padding: 14px 0;
+  padding: 22px 0;
   background-color: #000000;
   .wrapper {
     display: flex;
@@ -8,6 +8,17 @@
     flex-wrap: wrap;
   }
   &_icon {
+    display: flex;
+    align-items: center;
     padding: 0 18px;
+  }
+  @media (max-width: $break_md) {
+    padding: 16px 0;
+    &_icon {
+      padding: 0 10px;
+      img {
+        height: 15px;
+      }
+    }
   }
 }

@@ -14,6 +14,17 @@
       display: block;
     }
   }
+  @media (max-width: $break-md) {
+    padding: 2px 0;
+    .wrapper {
+      max-width: 550px;
+    }
+    &_icon {
+      img {
+        height: 23px;
+      }
+    }
+  }
   @media (max-width: $break_sm) {
     .wrapper {
       justify-content: center;
