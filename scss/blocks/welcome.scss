@@ -10,7 +10,8 @@
     letter-spacing: 0;
 	}
 	&_title {
-		font-family: "RobotoCondensed";
+    font-family: "RobotoCondensed";
+    font-weight: bold;
 		color: #f6ebff;
     text-shadow: 2px 2px 9px #de0b5e,
     -2px 2px 9px #de0b5e,
@@ -37,6 +38,7 @@
     font-size: 158px;
   }
 	&_text {
+    display: block;
     font-family: "RobotoCondensed";
 		font-size: 66px;
 		color: #fff;

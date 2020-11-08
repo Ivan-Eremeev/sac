@@ -339,6 +339,7 @@ body {
 }
 .welcome_title {
 	font-family: "RobotoCondensed";
+	font-weight: bold;
 	color: #f6ebff;
 	text-shadow: 2px 2px 9px #de0b5e, -2px 2px 9px #de0b5e, 2px -2px 9px #de0b5e, -2px -2px 9px #de0b5e;
 	line-height: 0.9;
@@ -362,6 +363,7 @@ body {
 	font-size: 158px;
 }
 .welcome_text {
+	display: block;
 	font-family: "RobotoCondensed";
 	font-size: 66px;
 	color: #fff;
@@ -453,7 +455,6 @@ body {
 	display: flex;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
-	color: #fff;
 	font-family: "RobotoCondensed";
 }
 .steps_col {
@@ -465,6 +466,7 @@ body {
 	display: flex;
 	height: 100%;
 	padding: 20px 45px;
+	color: #fff;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
@@ -612,7 +614,7 @@ body {
 }
 
 .partners {
-	padding: 22px 0;
+	padding: 12px 0;
 	background-color: #000000;
 }
 .partners .wrapper {
@@ -636,6 +638,7 @@ body {
 	    -ms-flex-align: center;
 	        align-items: center;
 	padding: 0 18px;
+	margin: 10px 0;
 }
 @media (max-width: 1050px) {
 	.partners {
