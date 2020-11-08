@@ -255,10 +255,13 @@ body {
 	    -ms-flex-direction: column;
 	        flex-direction: column;
 	min-height: 100%;
+	position: relative;
 }
 
 .header {
-	padding: 20px 0 0;
+	width: 100%;
+	padding: 12px 0 0;
+	position: absolute;
 }
 @media (max-width: 1400px) {
 	.header {
@@ -276,6 +279,12 @@ body {
 }
 
 .bg {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	-webkit-box-flex: 1;
 	    -ms-flex-positive: 1;
 	        flex-grow: 1;
@@ -284,6 +293,7 @@ body {
 	background-size: cover;
 }
 .bg > .wrapper {
+	width: 100%;
 	height: 100%;
 	padding-bottom: 15px;
 	background-image: url(../img/image-1920.png);
@@ -310,6 +320,9 @@ body {
 		background-position: center top 412px;
 		background-size: 520px auto;
 	}
+}
+.welcome {
+	padding-top: 140px;
 }
 .welcome_row {
 	display: -webkit-box;
@@ -410,6 +423,9 @@ body {
 	}
 }
 @media (max-width: 769px) {
+	.welcome {
+		padding-top: 80px;
+	}
 	.welcome_row {
 		-webkit-box-pack: center;
 		    -ms-flex-pack: center;
