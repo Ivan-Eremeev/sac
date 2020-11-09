@@ -24,6 +24,7 @@ input {
 	@include wrapper();
 }
 body {
+	min-width: 319px;
 	height: 100%;
 	background-color: #fff;
 	font-family: "Roboto";
@@ -122,4 +123,7 @@ body {
 		>.wrapper {
 		}
 	}
+}
+a {
+	-webkit-tap-highlight-color: transparent;
 }
